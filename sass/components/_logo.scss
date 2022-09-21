@@ -10,4 +10,13 @@
     &__title {
         color: $primary-blue-color;
     }
+
+    &--pos {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &--white {
+        color: $primary-white-color;
+    }
 }

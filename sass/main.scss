@@ -1,6 +1,10 @@
-
-
 @import './utils/variables';
+
+@import './utils/visually-hidden';
+
+@import './components/container';
+
+@import './components/section';
 
 @import './components/page-header';
 
@@ -10,3 +14,36 @@
 
 @import './components/nav-cont';
 
+@import './components/hero';
+
+@import './components/btn';
+
+@import './components/features';
+
+@import './components/about';
+
+@import './components/team-list';
+
+@import './components/social-links';
+
+@import './components/customers-list';
+
+@import './components/footer';
+
+@import './components/footer-cont';
+
+@import './components/footer-social-links';
+
+@import './components/subscribe-form';
+
+@import './components/portfolio-list';
+
+@import './components/portfolio-btn';
+
+@import './components/samples-list';
+
+@import './components/backdrop';
+
+@import './components/modal';
+
+@import './components/modal-form';

@@ -1,0 +1,28 @@
+.footer-cont {
+    &__item:not(:first-child) {
+        margin-top: 9px;
+    }
+
+    &__address {
+        line-height: 1.7;
+        font-style: normal;
+        text-decoration: none;
+    
+        color: $primary-white-color;
+    }
+
+    &__contacts {
+        line-height: 1.7;
+        font-style: normal;
+        text-decoration: none;
+    
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color $transition;
+    }
+
+    &__contacts:hover,
+    &__contacts:focus {
+        color: $primary-blue-color;
+    }
+}
