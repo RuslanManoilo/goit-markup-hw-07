@@ -6,17 +6,17 @@
     line-height: 1.2;
     text-decoration: none;
     letter-spacing: 0.03em;
+}
 
-    &__title {
-        color: $primary-blue-color;
-    }
+.logo__title {
+    color: $primary-blue-color;
+}
 
-    &--pos {
-        display: flex;
-        margin-bottom: 20px;
-    }
+.logo--position {
+    display: flex;
+    margin-bottom: 20px;
+}
 
-    &--white {
-        color: $primary-white-color;
-    }
+.logo--white {
+    color: $primary-white-color;
 }

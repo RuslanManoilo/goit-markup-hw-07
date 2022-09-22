@@ -1,6 +1,10 @@
 @import './utils/variables';
 
+@import './utils/_mixins';
+
 @import './utils/visually-hidden';
+
+@import './components/base';
 
 @import './components/container';
 
@@ -12,7 +16,7 @@
 
 @import './components/nav-site';
 
-@import './components/nav-cont';
+@import './components/nav-contacts';
 
 @import './components/hero';
 
@@ -30,7 +34,7 @@
 
 @import './components/footer';
 
-@import './components/footer-cont';
+@import './components/footer-aside';
 
 @import './components/footer-social-links';
 

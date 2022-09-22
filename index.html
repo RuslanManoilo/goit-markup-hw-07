@@ -10,42 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
 
     <!--Header-->
     <header class="page-header">
-        <div class="container container--pos">
+        <div class="container page-header__container">
             <nav class="main-nav">
                 <a href="/" class="logo">
                     <span class="logo__title">Web</span>Studio
                 </a>
     
                 <ul class="nav-site">
-                    <li class="nav-site__item nav-site__item--pos">
-                        <a class="nav-site__link current" href="./index.html">Студія</a>
+                    <li class="nav-site__item">
+                        <a class="nav-site__link nav-site__link--current" href="./index.html">Студія</a>
                     </li>
-                    <li class="nav-site__item nav-site__item--pos">
+                    <li class="nav-site__item">
                         <a class="nav-site__link" href="./portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="nav-site__item nav-site__item--pos">
+                    <li class="nav-site__item">
                         <a class="nav-site__link" href="#">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="nav-cont">
-                <li class="nav-cont__item">
-                    <a class="nav-cont__link" href="mailto:info@devstudio.com">
-                        <svg class="nav-cont__icon" width="20" height="20">
+            <ul class="nav-contacts">
+                <li class="nav-contacts__item">
+                    <a class="nav-contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="nav-contacts__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="nav-cont__item">
-                    <a class="nav-cont__link" href="tel:+380961111111">
-                        <svg class="nav-cont__icon" width="20" height="20">
+                <li class="nav-contacts__item">
+                    <a class="nav-contacts__link" href="tel:+380961111111">
+                        <svg class="nav-contacts__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -60,7 +60,7 @@
         <!--Presentation-->
             <section class="hero">
                 <div class="container">
-                    <h1 class="container__main-title">
+                    <h1 class="hero__title">
                         ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
                     </h1>
                     <button type="button" class="btn" data-modal-open>Замовити послугу</button>
@@ -70,7 +70,7 @@
         <!--Preferences-->
         <section class="section">
             <div class="container">
-                <h2 class="container__title visually-hidden">Переваги</h2>
+                <h2 class="section__title visually-hidden">Переваги</h2>
                 <ul class="features">
                     <li class="features__item">
                         <div class="features__bg">
@@ -129,30 +129,30 @@
         </section>
         
         <!--About-->
-        <section class="section section--pt">
+        <section class="section section--no-padding-top">
             <div class="container">
-                <h2 class="container__title">
+                <h2 class="section__title">
                     Чим ми займаємося
                 </h2>
                 <ul class="about-list">
                     <li class="about-list__item">
-                        <div class="about-list__img">
+                        <div class="about-list__box">
                             <a href="#"><img src="./images/img1.jpg" alt="Статистика" width="370">
-                                <h3 class="about-list__text">ДЕСКТОПНІ ДОДАТКИ</h3>
+                                <h3 class="about-list__title">ДЕСКТОПНІ ДОДАТКИ</h3>
                             </a> 
                         </div>
                     </li>
                     <li class="about-list__item">
-                        <div class="about-list__img">
+                        <div class="about-list__box">
                             <a href="#"><img src="./images/img2.jpg" alt="Аналіз" width="370">
-                                <h3 class="about-list__text">МОБІЛЬНІ ДОДАТКИ</h3>
+                                <h3 class="about-list__title">МОБІЛЬНІ ДОДАТКИ</h3>
                             </a>
                         </div>
                     </li>
                     <li class="about-list__item">
-                        <div class="about-list__img">
+                        <div class="about-list__box">
                             <a href="#"><img src="./images/img3.jpg" alt="Дизайн" width="370">
-                                <h3 class="about-list__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+                                <h3 class="about-list__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
                             </a>                            
                         </div>
                     </li>
@@ -161,9 +161,9 @@
         </section>
         
         <!--Team-->
-        <section class="section section-bg">
+        <section class="section section--gray-background ">
             <div class="container">
-                <h2 class="container__title">
+                <h2 class="section__title">
                     Наша команда
                 </h2>
                 
@@ -171,10 +171,10 @@
                     <li class="team-list__bg">
                         <img src="./images/imgc1.jpg" alt="Игорь Демьяненко" width="270">
                         <div class="team-list__meta">
-                            <h3 class="team-list__name">
+                            <h3 class="team-list__title">
                                 Ігор Дем'яненко
                             </h3>
-                            <p class="team-list__prof" lang="en">
+                            <p class="team-list__text" lang="en">
                                 Product Designer
                             </p>
                             <ul class="social-links">
@@ -212,10 +212,10 @@
                     <li class="team-list__bg">
                         <img src="./images/imgc2.jpg" alt="Ольга Репина" width="270">
                         <div class="team-list__meta">
-                            <h3 class="team-list__name">
+                            <h3 class="team-list__title">
                                 Ольга Рєпіна
                             </h3>
-                            <p class="team-list__prof" lang="en">
+                            <p class="team-list__text" lang="en">
                                 Frontend Developer
                             </p>
                             <ul class="social-links">
@@ -253,10 +253,10 @@
                     <li class="team-list__bg">
                         <img src="./images/imgc3.jpg" alt="Николай Тарасов" width="270">
                         <div class="team-list__meta">
-                            <h3 class="team-list__name">
+                            <h3 class="team-list__title">
                                 Микола Тарасов
                             </h3>
-                            <p class="team-list__prof" lang="en">
+                            <p class="team-list__text" lang="en">
                                 Marketing
                             </p>
                             <ul class="social-links">
@@ -294,10 +294,10 @@
                     <li class="team-list__bg">
                         <img src="./images/imgc4.jpg" alt="Михаил Ермаков" width="270">
                         <div class="team-list__meta">
-                            <h3 class="team-list__name">
+                            <h3 class="team-list__title">
                                 Михайло Єрмаков
                             </h3>
-                            <p class="team-list__prof" lang="en">
+                            <p class="team-list__text" lang="en">
                                 UI Designer
                             </p>
                             <ul class="social-links">
@@ -339,47 +339,47 @@
         <!--Regular Customers-->
         <section class="section">
             <div class="container">
-                <h2 class="container__title">
+                <h2 class="section__title">
                     Постійні клієнти
                 </h2>
                 <ul class="customers-list">
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list__item">
-                        <a href="#" class="customers-list__logo">
+                        <a href="#" class="customers-list__link">
                             <svg class="customers-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo-6"></use>
                             </svg>
@@ -391,24 +391,24 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer footer--pos">
+    <footer class="footer footer--position">
             <div class="container container--baseline">
                 <div class="footer-contacts">
-                    <a href="/" class="logo logo--pos logo--white">
+                    <a href="/" class="logo logo--position logo--white">
                         <span class="logo__title">Web</span>Studio
                     </a>
                     
                     <address>
-                        <ul class="footer-cont">
-                            <li class="footer-cont__item">
-                                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="footer-cont__address">м.
+                        <ul class="footer-aside">
+                            <li class="footer-aside__item">
+                                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="footer-aside__address">м.
                                     Київ, пр-т Лесі Українки, 26</a>
                             </li>
-                            <li class="footer-cont__item">
-                                <a href="mailto:info@devstudio.com" class="footer-cont__contacts">info@devstudio.com</a>
+                            <li class="footer-aside__item">
+                                <a href="mailto:info@devstudio.com" class="footer-aside__contacts">info@devstudio.com</a>
                             </li>
-                            <li class="footer-cont__item">
-                                <a href="tel:+380961111111" class="footer-cont__contacts">+38 096 111 11 11</a>
+                            <li class="footer-aside__item">
+                                <a href="tel:+380961111111" class="footer-aside__contacts">+38 096 111 11 11</a>
                             </li>
                         </ul>
                     </address>
@@ -458,7 +458,7 @@
                         <label class="subscribe-form__label">
                             <input type="email" name="mail" placeholder="E-mail" class="subscribe-form__input">
                         </label>
-                        <button type="submit" class="btn btn--pos">
+                        <button type="submit" class="btn btn--position">
                             <span>Підписатися</span>
                             <svg class="btn__icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-icon-send"></use>

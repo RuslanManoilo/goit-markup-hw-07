@@ -13,45 +13,45 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform $transition;
+}
 
-    &__btn-close {
-        position: absolute;
-        top: 8px;
-        right: 8px;
+.modal__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
     
-        @include centeredFlex();
+    @include centeredFlex();
     
-        width: 30px;
-        height: 30px;
-        padding: 6px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
     
-        cursor: pointer;
+    cursor: pointer;
     
-        fill: currentColor;
-        background-color: $primary-white-color;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
+    fill: currentColor;
+    background-color: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     
-        transition: color $transition;
-    }
+    transition: color $transition;
 
-    &__btn-close:hover,
-    &__btn-close:focus {
+    &:hover,
+    &:focus {
         color: $primary-blue-color;
     }
+}
 
-    &__title {
-        font-weight: 700;
-        font-size: 20px;
-        letter-spacing: 0.03em;
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
     
-        text-align: center;
-        margin-bottom: 12px;
+    text-align: center;
+    margin-bottom: 12px;
     
-        color: $primary-black-color;
-    }
+    color: $primary-black-color;
+}
 
-    &__btn-send {
-        @include centeredFlex();
-    }
+.modal__btn-send {
+    @include centeredFlex();
 }

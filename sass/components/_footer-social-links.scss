@@ -1,55 +1,53 @@
 .footer-social-links {
     margin-left: 70px;
     margin-right: 93px;
+}
 
-    &__title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.15;
+.footer-social-links__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
     
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     
-        color: $primary-white-color;
-    }
+    color: $primary-white-color;
 }
 
 .footer-links {
     @include centeredFlex();
+    padding: 0;
+}
 
+.footer-links__item {
+    @include centeredFlex();
     padding: 0;
 
-    &__item {
-        @include centeredFlex();
-
-        padding: 0;
-    }
-
-    &__item:not(:first-child) {
+    &:not(:first-child) {
         margin-left: 10px;
     }
+}
 
-    &__link {
-        @include centeredFlex();
+.footer-links__link {
+    @include centeredFlex();
 
-        width: 44px;
-        height: 44px;
+    width: 44px;
+    height: 44px;
     
-        background-color: rgba(255, 255, 255, 0.1);
-        color: $primary-white-color;
-        fill: currentColor;
-        border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primary-white-color;
+    fill: currentColor;
+    border-radius: 50%;
     
-        transition: color $transition,
-                    background-color $transition;
-    }
+    transition: color $transition,
+                background-color $transition;
 
-    &__icon {
-        fill: currentColor;
-    }
+    &:hover,
+    &:focus {
+            background-color: $primary-blue-color;
+            color: $primary-white-color;
+        }
+}
 
-    &__link:hover,
-    &__link:focus {
-        background-color: $primary-blue-color;
-        color: $primary-white-color;
-    }
+.footer-links__icon {
+    fill: currentColor;
 }
